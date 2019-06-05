@@ -1,4 +1,6 @@
 # random-prime
+![npm](https://img.shields.io/npm/v/random-prime.svg)
+[![Build Status](https://travis-ci.com/Prabhakar-Poudel/random-prime.svg?branch=master)](https://travis-ci.com/Prabhakar-Poudel/random-prime)
 
 > Generate a random prime number
 
