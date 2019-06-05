@@ -1,5 +1,4 @@
 const random = require( './index');
-const assert = require('assert');
 
 const { isPrime, randomPrime } = random;
 
@@ -17,6 +16,10 @@ describe('isPrime()', () => {
     expect(isPrime(-7)).toBeFalsy();
     expect(isPrime(15487402)).toBeFalsy();
     expect(isPrime(32416190079)).toBeFalsy();
+  });
+  it('throws error for invalid inputs', () => {
+    expect(() => isPrime()).toThrow(TypeError);
+    expect(() => isPrime('foo')).toThrow(TypeError);
   });
 });
 
@@ -41,7 +44,6 @@ describe('randomPrime()', () => {
     expect(randomPrime(7, 7)).toBe(7);
     expect(randomPrime(-10, 10)).not.toBeNull();
     expect(randomPrime(-10, 2)).toBe(2);
-
   });
   it('returns null if no prime number exist', () => {
     expect(randomPrime(1)).toBeNull();

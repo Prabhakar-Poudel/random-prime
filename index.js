@@ -1,6 +1,9 @@
 'use-strict';
 
 const isPrime = number => {
+  if (typeof number !== 'number') {
+    throw new TypeError('Expected input of type Number');
+  }
   if (number <= 3) {
     return number > 1;
   }
