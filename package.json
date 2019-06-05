@@ -1,0 +1,23 @@
+{
+  "name": "random-prime",
+  "version": "1.0.0",
+  "description": "Generate a random prime number",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "generate",
+    "generator",
+    "number",
+    "prime",
+    "rand",
+    "random",
+    "range"
+  ],
+  "author": {
+    "name": "Prabhakar Poudel",
+    "email": "yuvrajzohan@gmail.com"
+  },
+  "license": "MIT"
+}
