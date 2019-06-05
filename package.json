@@ -4,8 +4,9 @@
   "description": "Generate a random prime number",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
+  "type": "module",
   "keywords": [
     "generate",
     "generator",
@@ -19,5 +20,8 @@
     "name": "Prabhakar Poudel",
     "email": "yuvrajzohan@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
 }
