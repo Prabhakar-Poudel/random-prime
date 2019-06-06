@@ -1,6 +1,6 @@
-const random = require( './index');
+const random = require('.');
 
-const { isPrime, randomPrime } = random;
+const {isPrime, randomPrime} = random;
 
 describe('isPrime()', () => {
   it('returns true for prime numbers', () => {

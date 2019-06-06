@@ -4,6 +4,7 @@
   "description": "Generate a random prime number",
   "main": "index.js",
   "scripts": {
+    "lint": "xo",
     "test": "jest"
   },
   "type": "module",
@@ -22,6 +23,11 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "xo": "^0.24.0"
+  },
+  "xo": {
+    "space": true,
+    "globals": ["describe", "expect", "it"]
   }
 }
