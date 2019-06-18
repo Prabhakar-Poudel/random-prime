@@ -56,9 +56,11 @@ console.log(isPrime(2));
 // true
 console.log(isPrime(254205915209711));
 // true
-console.log(randomPrime(500));
+console.log(isPrime(500));
 // false
-console.log(randomPrime(-10));
+console.log(isPrime(-10));
 // false
+console.log(isPrime(137));
+// true
 ```
 
