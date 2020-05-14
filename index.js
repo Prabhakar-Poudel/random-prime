@@ -35,12 +35,12 @@ const randomPrime = (min, max) => {
   max = Math.floor(max)
 
   const range = max - min + 1
-  const randomNum = Math.floor(Math.random() * range) + min
+  const randomNumber = Math.floor(Math.random() * range) + min
 
-  if (isPrime(randomNum)) return randomNum
+  if (isPrime(randomNumber)) return randomNumber
 
-  let i = randomNum - 1
-  let j = randomNum + 1
+  let i = randomNumber - 1
+  let j = randomNumber + 1
   while (i >= min && j <= max) {
     if (isPrime(i)) return i
     if (isPrime(j)) return j
