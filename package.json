@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "xo",
-    "test": "jest"
+    "test": "xo && jest"
   },
   "type": "module",
   "keywords": [
@@ -27,6 +27,10 @@
     "xo": "^0.24.0"
   },
   "xo": {
+    "rules": {
+      "curly": [2, "multi-line"]
+    },
+    "semicolon": false,
     "space": true,
     "globals": ["describe", "expect", "it"]
   }
