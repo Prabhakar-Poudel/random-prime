@@ -14,6 +14,7 @@ describe('isPrime()', () => {
     expect(isPrime(1)).toBeFalsy()
     expect(isPrime(4)).toBeFalsy()
     expect(isPrime(-7)).toBeFalsy()
+    expect(isPrime(235)).toBeFalsy()
     expect(isPrime(15487402)).toBeFalsy()
     expect(isPrime(32416190079)).toBeFalsy()
   })
