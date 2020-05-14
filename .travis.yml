@@ -8,4 +8,4 @@ os:
   - linux
   - osx
   - windows
-before_script: npm run lint
+before_script: yarn run lint
