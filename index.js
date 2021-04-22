@@ -1,6 +1,6 @@
 'use-strict'
 
-const isPrime = number => {
+const isPrime = (number) => {
   if (typeof number !== 'number') throw new TypeError('Expected input of type Number')
 
   if (number <= 3) return number > 1
@@ -14,6 +14,11 @@ const isPrime = number => {
   }
 
   return true
+}
+
+const eachPrime = (list) => {
+  if (!Array.isArray(list)) throw new TypeError('Expected input to be Array of numbers')
+  return list.every(isPrime)
 }
 
 const randomPrime = (min, max) => {
@@ -61,4 +66,4 @@ const randomPrime = (min, max) => {
   return null
 }
 
-module.exports = {isPrime, randomPrime}
+module.exports = {isPrime, randomPrime, eachPrime}

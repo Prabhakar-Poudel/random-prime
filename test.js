@@ -1,6 +1,6 @@
 const random = require('.')
 
-const {isPrime, randomPrime} = random
+const {isPrime, randomPrime, eachPrime} = random
 
 describe('isPrime()', () => {
   it('returns true for prime numbers', () => {
@@ -21,6 +21,31 @@ describe('isPrime()', () => {
   it('throws error for invalid inputs', () => {
     expect(() => isPrime()).toThrow(TypeError)
     expect(() => isPrime('foo')).toThrow(TypeError)
+  })
+})
+
+describe('eachPrime()', () => {
+  it('returns true for prime numbers', () => {
+    expect(eachPrime([2, 19, 83, 47])).toBeTruthy()
+    expect(eachPrime([2])).toBeTruthy()
+    expect(eachPrime([101, 15487403, 32416190071])).toBeTruthy()
+  })
+  it('returns false for any non-prime number in the list', () => {
+    expect(eachPrime([1, 2, 3])).toBeFalsy()
+    expect(eachPrime([40, 50, 60])).toBeFalsy()
+    expect(eachPrime([-7, 47, 83])).toBeFalsy()
+    expect(eachPrime([32416190071, 15487403, 235])).toBeFalsy()
+    expect(eachPrime([13, 15487402])).toBeFalsy()
+    expect(eachPrime([32416190079])).toBeFalsy()
+  })
+  it('throws error for invalid inputs', () => {
+    expect(() => eachPrime()).toThrow(TypeError)
+    expect(() => eachPrime(['foo'])).toThrow(TypeError)
+    expect(() => eachPrime('foo')).toThrow(TypeError)
+    expect(() => eachPrime([11, 17, 'foo'])).toThrow(TypeError)
+    expect(() => eachPrime({a: 11, b: 17})).toThrow(TypeError)
+    expect(() => eachPrime()).toThrow(TypeError)
+
   })
 })
 
@@ -60,4 +85,3 @@ describe('randomPrime()', () => {
     expect(() => randomPrime('foo', 'bar')).toThrow(TypeError)
   })
 })
-
