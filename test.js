@@ -40,6 +40,7 @@ describe('eachPrime()', () => {
   })
   it('throws error for invalid inputs', () => {
     expect(() => eachPrime()).toThrow(TypeError)
+    expect(() => eachPrime([])).toThrow(TypeError)
     expect(() => eachPrime(['foo'])).toThrow(TypeError)
     expect(() => eachPrime('foo')).toThrow(TypeError)
     expect(() => eachPrime([11, 17, 'foo'])).toThrow(TypeError)

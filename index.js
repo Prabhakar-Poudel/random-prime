@@ -17,7 +17,7 @@ const isPrime = (number) => {
 }
 
 const eachPrime = (list) => {
-  if (!Array.isArray(list)) throw new TypeError('Expected input to be Array of numbers')
+  if (!Array.isArray(list) || list.length == 0) throw new TypeError('Expected input to be Array of numbers')
   return list.every(isPrime)
 }
 
