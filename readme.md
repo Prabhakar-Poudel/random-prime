@@ -48,9 +48,9 @@ Generate a random prime number from `min` to `max`.
 > Throws TypeError if `min` and/or `max` is not a Number
 
 ### isPrime(num)
-An efficient method to check i a number is prime.
+An efficient method to check if a number is prime.
 > Returns true if `num` is prime, false if `num` is not prime.
-> Throws TypeError if input is not a Number
+> Throws TypeError if the input is not a Number
 
 #### Example
 ```javascript
@@ -58,12 +58,33 @@ const isPrime = require('random-prime').isPrime;
 
 console.log(isPrime(2));
 // true
-console.log(isPrime(254205915209711));
+console.log(isPrime(32416190079));
 // true
+console.log(isPrime(254205915209711));
+// false
 console.log(isPrime(500));
 // false
 console.log(isPrime(-10));
 // false
 console.log(isPrime(137));
 // true
+```
+
+### eachPrime([num])
+An efficient method to check if every numbers in a list is prime.
+> Returns true if all items in list are prime, false otherwise.
+> Throws TypeError if the input is not of type Array or is an empty array
+
+#### Example
+```javascript
+const eachPrime = require('random-prime').eachPrime;
+
+console.log(eachPrime([2, 19, 83, 47]));
+// true
+console.log(eachPrime([32416190079, 13, 23]));
+// true
+console.log(eachPrime([500, 1000, 2000]));
+// false
+console.log(eachPrime([2, 3, -10]));
+// false
 ```
