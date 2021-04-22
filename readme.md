@@ -3,13 +3,17 @@
 [![Build Status](https://travis-ci.com/Prabhakar-Poudel/random-prime.svg?branch=master)](https://travis-ci.com/Prabhakar-Poudel/random-prime)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
-> Generate a random prime number
+> Generate (or check for) a random prime number
 
 This uses `Math.random` internally.
 
 ## Install
 ```
 npm i random-prime --save
+```
+or
+```
+yarn add random-prime
 ```
 
 ## Example
