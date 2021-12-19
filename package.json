@@ -28,10 +28,17 @@
   },
   "xo": {
     "rules": {
-      "curly": [2, "multi-line"]
+      "curly": [
+        2,
+        "multi-line"
+      ]
     },
     "semicolon": false,
     "space": true,
-    "globals": ["describe", "expect", "it"]
+    "globals": [
+      "describe",
+      "expect",
+      "it"
+    ]
   }
 }
