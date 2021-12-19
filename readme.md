@@ -1,9 +1,7 @@
 # random-prime
 [![npm](https://img.shields.io/npm/v/random-prime.svg)](https://www.npmjs.com/package/random-prime)
-[![Build Status](https://github.com/Prabhakar-Poudel/random-prime/workflows/Test%20&%20Lint/badge.svg?branch=master)](https://github.com/Prabhakar-Poudel/random-prime/actions?query=branch%3Amaster)
-
-
-[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
+[![Build Status](https://github.com/Prabhakar-Poudel/random-prime/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/Prabhakar-Poudel/random-prime/actions?query=branch%3Amaster)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 > Generate (or check for) a random prime number
 
