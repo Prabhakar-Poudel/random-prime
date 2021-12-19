@@ -1,6 +1,6 @@
 'use-strict'
 
-const isPrime = (number) => {
+const isPrime = number => {
   if (typeof number !== 'number') throw new TypeError('Expected input of type Number')
 
   if (number <= 3) return number > 1
@@ -16,9 +16,9 @@ const isPrime = (number) => {
   return true
 }
 
-const eachPrime = (list) => {
-  if (!Array.isArray(list) || list.length == 0) throw new TypeError('Expected input to be Array of numbers')
-  return list.every(isPrime)
+const eachPrime = list => {
+  if (!Array.isArray(list) || list.length === 0) throw new TypeError('Expected input to be Array of numbers')
+  return list.every(number => isPrime(number))
 }
 
 const randomPrime = (min, max) => {
