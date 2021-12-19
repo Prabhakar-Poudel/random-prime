@@ -46,7 +46,6 @@ describe('eachPrime()', () => {
     expect(() => eachPrime([11, 17, 'foo'])).toThrow(TypeError)
     expect(() => eachPrime({a: 11, b: 17})).toThrow(TypeError)
     expect(() => eachPrime()).toThrow(TypeError)
-
   })
 })
 
