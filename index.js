@@ -66,4 +66,4 @@ const randomPrime = (min, max) => {
   return null
 }
 
-module.exports = {isPrime, randomPrime, eachPrime}
+module.exports = { isPrime, randomPrime, eachPrime }

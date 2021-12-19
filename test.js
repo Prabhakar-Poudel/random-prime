@@ -1,6 +1,7 @@
+/* eslint-env jest */
 const random = require('.')
 
-const {isPrime, randomPrime, eachPrime} = random
+const { isPrime, randomPrime, eachPrime } = random
 
 describe('isPrime()', () => {
   it('returns true for prime numbers', () => {
@@ -44,7 +45,7 @@ describe('eachPrime()', () => {
     expect(() => eachPrime(['foo'])).toThrow(TypeError)
     expect(() => eachPrime('foo')).toThrow(TypeError)
     expect(() => eachPrime([11, 17, 'foo'])).toThrow(TypeError)
-    expect(() => eachPrime({a: 11, b: 17})).toThrow(TypeError)
+    expect(() => eachPrime({ a: 11, b: 17 })).toThrow(TypeError)
     expect(() => eachPrime()).toThrow(TypeError)
   })
 })

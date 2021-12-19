@@ -4,8 +4,8 @@
   "description": "Generate a random prime number",
   "main": "index.js",
   "scripts": {
-    "lint": "xo",
-    "test": "jest"
+    "lint": "standard",
+    "test": "yarn lint && jest"
   },
   "type": "module",
   "keywords": [
@@ -24,22 +24,6 @@
   "license": "MIT",
   "devDependencies": {
     "jest": "^27.4.5",
-    "xo": "^0.47.0"
-  },
-  "xo": {
-    "rules": {
-      "curly": [
-        2,
-        "multi-line"
-      ],
-      "unicorn/prefer-module": 0
-    },
-    "semicolon": false,
-    "space": true,
-    "globals": [
-      "describe",
-      "expect",
-      "it"
-    ]
+    "standard": "^16.0.4"
   }
 }
