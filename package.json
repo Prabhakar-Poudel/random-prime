@@ -23,15 +23,16 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "jest": "^26.0.1",
-    "xo": "^0.30.0"
+    "jest": "^27.4.5",
+    "xo": "^0.47.0"
   },
   "xo": {
     "rules": {
       "curly": [
         2,
         "multi-line"
-      ]
+      ],
+      "unicorn/prefer-module": 0
     },
     "semicolon": false,
     "space": true,
