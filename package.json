@@ -3,6 +3,7 @@
   "version": "3.0.0",
   "description": "Generate a random prime number",
   "main": "index.js",
+  "repository": "Prabhakar-Poudel/random-prime",
   "scripts": {
     "lint": "standard",
     "test": "yarn lint && jest"
