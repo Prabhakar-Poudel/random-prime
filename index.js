@@ -3,14 +3,15 @@
 const isPrime = number => {
   if (typeof number !== 'number') throw new TypeError('Expected input of type Number')
 
+  if (!Number.isInteger(number)) return false
+
   if (number <= 3) return number > 1
 
   if (number % 2 === 0 || number % 3 === 0) return false
 
   const maxDivisor = Math.floor(Math.sqrt(number))
   for (let i = 5; i <= maxDivisor; i += 6) {
-    // eslint-disable-next-line no-mixed-operators
-    if (number % i === 0 || number % i + 2 === 0) return false
+    if (number % i === 0 || number % (i + 2) === 0) return false
   }
 
   return true
