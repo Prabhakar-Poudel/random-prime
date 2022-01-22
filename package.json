@@ -8,7 +8,6 @@
     "lint": "standard",
     "test": "yarn lint && jest"
   },
-  "type": "module",
   "keywords": [
     "generate",
     "generator",
