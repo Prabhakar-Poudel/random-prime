@@ -2,3 +2,6 @@ node_modules
 
 # IDE
 .vscode*
+
+dist
+yarn.lock
