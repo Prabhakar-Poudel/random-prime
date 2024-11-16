@@ -1,6 +1,6 @@
 {
 	"name": "random-prime",
-	"version": "4.0.1",
+	"version": "4.0.2",
 	"description": "Generate a random prime number",
 	"main": "index.js",
 	"repository": "Prabhakar-Poudel/random-prime",
